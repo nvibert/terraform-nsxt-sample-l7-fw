@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    nsxt = {
+      source = "vmware/nsxt"
+    }
+  }
+  required_version = ">= 0.13"
+}
+
 provider "nsxt" {
   host                 = var.host
   vmc_token            = var.vmc_token
