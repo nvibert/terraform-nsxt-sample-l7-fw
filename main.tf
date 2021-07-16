@@ -14,8 +14,14 @@ provider "nsxt" {
   enforcement_point    = "vmc-enforcementpoint"
 }
 
-variable "host" {}
-variable "vmc_token" {}
+variable "host" {
+  description = "VMC NSX-T REVERSE PROXY URL"
+}
+
+variable "vmc_token" {
+  description = "VMC Token"
+}
+
 
 /*=====================================
 Create Security Group based on NSX Tag
